@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Gayathri');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background: #ff7300;
+    position: fixed;
+}
+.logo{
+    width: 30%;
+    float: left;
+    text-align: left;
+    line-height: 94px;
+    font-variant: small-caps;
+    color: white;
+    text-shadow: 2px 2px 5px orange
+}
+.logo a{
+    text-decoration: none;
+    font-size:25px ;
+    font-family:'Verdana';
+    color: white ;
+    letter-spacing: 2px;
+}
+
+nav{
+    float: right;
+    line-height: 100px;
+}
+nav a{
+    text-decoration: none;
+    font-size:15px ;
+    font-family:'Poppins' ;
+    color: white ;
+    letter-spacing: 2px;
+    margin: 20px 8px ;
+    padding: 0.5px;
+    font-weight: 500;
+    transition: .3s;
+    opacity: .8;
+}
+nav span a{
+    border: none;
+    background-color: white;
+    color: #ff7300;
+    border-radius: 45px;
+    letter-spacing: 2px;
+    padding-left: 11px;
+    padding-right: 9px;
+    opacity: 100;
+}
+
+nav span a:hover{
+    background: #ff7300;
+    color: white;
+}
+nav input {
+    float: right;
+    padding: 8px;
+    border:#ff7300;
+    margin-top: 29px;
+    font-size: 15px;
+    border-radius: 20px;
+    padding-right: 13px;
+    box-shadow: 2px 2px 5px orange;
+    font-family: 'Poppins';
+}
+
+nav a:hover{
+    background: white;
+    border-radius: 45px;
+    color: #ff7300;
+    transform: scale(1.5);
+    padding-left: 12px;
+    padding-right: 9px;
+    opacity: 10;
+}
+
+.banner-area {
+    background-image:url(/jakob-owens-f3s0i96CRGQ-unsplash.jpg);
+    background-size:cover;
+    background-position: center;
+    top: 100px;
+    width: 100%;
+    height: 80vh;
+    position: fixed;
+}
+
+.banner-area :after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:#000000;
+    opacity: .5;
+    z-index: -1;
+}
+
+.banner-area h2{
+    color:white;
+    padding-top: 14;
+    font-size: 45px;
+    text-align:center;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+.banner-area h2 span{
+    text-shadow: none;
+    color: white;
+}
+
+.content-area{
+
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background: white;
+    top: 550px;
+}
+
+.content-area h2 {
+    text-align: left;
+    font-size: 40px;
+    margin: 0;
+    padding-top: 30px;
+    letter-spacing: 2px;
+}
+
+.content-area p {
+    line-height: 35px;
+    text-indent: 4p;
+    text-align: justify;
+}
+.nav-content{
+    padding-top: 15px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.nav-content a{
+    color: #ff7300;
+    text-decoration: none;
+    transition: .3s;
+}
+.nav-content a:hover{
+    background: #ff7300;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 6px;
+}
+.img-foryou img{
+    padding-top: 30px;
+    width: 30%;
+    height: 240px;
+    border-radius: 5px;
+}
