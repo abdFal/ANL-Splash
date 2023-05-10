@@ -15,7 +15,11 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
-    <link rel="stylesheet" href="Styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b2c7ef89be.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
   </head>
 
@@ -35,12 +39,12 @@
             <div class="container-fluid mx-5">
               <a class="navbar-brand fs-3 fw-bold">For You</a>
               <div class="dropdown text-start me-5"></div>
-              <div class="upload rounded-5">
+              <div class="upload rounded-5 py-auto">
                 <a
-                  class="text-decoration-none fw-light text-light rounded-4 p-3"
-                  href="#gallery"
-                  id="add-file-button"
-                  >+ Add Post...</a
+                  class="text-decoration-none fw-light text-light rounded-4 pt-4 pb-3 px-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#postModal"
+                  >+ Add Image...</a
                 >
               </div>
             </div>
@@ -79,7 +83,7 @@
                 loop
                 muted
                 data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
+                data-bs-target="#vidModal"
               ></video>
               <img
                 src="img/9b05ec5f-a4c6-4153-ab1b-6e0e3ea6b02e.jpeg"
@@ -93,7 +97,7 @@
                 loop
                 muted
                 data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
+                data-bs-target="#vidModal"
               ></video>
               <img
                 src="img/Supra wallpaper by PedroDavi27 - Download on ZEDGE™ _ eadc.jpeg"
@@ -131,7 +135,7 @@
                 loop
                 muted
                 data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
+                data-bs-target="#vidModal"
               ></video>
               <img
                 src="img/8fc79ff4-a75c-4f1f-b44c-a355c96a693c.jpeg"
@@ -151,7 +155,7 @@
                 loop
                 muted
                 data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
+                data-bs-target="#vidModal"
               ></video>
               <img
                 src="img/Bored Bart wallpaper by Elysion09 - Download on ZEDGE™ _ 7e29.jpeg"
@@ -177,7 +181,7 @@
                 loop
                 muted
                 data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
+                data-bs-target="#vidModal"
               ></video>
               <img
                 src="img/imvu boys cute.jpeg"
@@ -251,19 +255,15 @@
     <!-- Modal -->
     <div
       class="modal fade rounded-1"
-      id="exampleModal"
+      id="vidModal"
       tabindex="-1"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby="vidModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog modal-md h-25">
-        <!-- Mengubah kelas modal-dialog menjadi modal-sm -->
         <div class="modal-content">
-          <!-- Menghapus kelas rounded-0 pada modal-content -->
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
-              Video Preview
-            </h1>
+            <h1 class="modal-title fs-5" id="vidModalLabel">Video Preview</h1>
             <button
               type="button"
               class="btn-close"
@@ -287,7 +287,7 @@
               download
               class="btn btn-sm btn-outline-dark btn-download rounded-0"
               >Download</a
-            >
+            ><i class="fas-fa-"></i>
           </div>
         </div>
       </div>
@@ -304,7 +304,7 @@
       <div class="modal-dialog modal-lg rounded-0">
         <div class="modal-content rounded-1 h-50">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="imgModalLabel">Video Preview</h1>
+            <h1 class="modal-title fs-5" id="imgModalLabel">Image Preview</h1>
             <button
               type="button"
               class="btn-close"
@@ -329,6 +329,39 @@
               class="btn btn-sm btn-outline-dark btn-download rounded-0"
               >Download</a
             >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal modal-sm fade rounded-1"
+      id="postModal"
+      tabindex="-1"
+      aria-labelledby="postModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-sm rounded-0">
+        <div class="modal-content rounded-1 h-50">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="postModalLabel">Upload Image</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <p class="text-muted py-3">
+            You Can Only Upload An Image, Upgrade to Plus for more.
+          </p>
+          <div class="modal-footer mx-auto">
+            <a
+              href="#"
+              id="add-file-button"
+              class="btn btn-outline-dark btn-download rounded-0"
+              >Upload File <i class="fa-solid fa-arrow-up-from-bracket"></i
+            ></a>
           </div>
         </div>
       </div>
